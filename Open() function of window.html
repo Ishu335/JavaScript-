@@ -1,0 +1,23 @@
+
+
+<html>
+    <head>
+    <title> Open() function of window </title>
+        <script  type="text/javascript">
+            function openWindow()
+            {   window.open("https://www.wikipedia.org/","Frame Work","width=250 height=250 ");
+                /*Using for loop for multipal window*/
+                for( i=0;i<5;i++)
+                {
+                 window.open("","","width=250 height=250 ");
+                }
+
+            } 
+             		
+        </script>
+        </head>
+        <body>
+            <p>Click to open a new Window</p>
+             <input type="button" value="open new window" onclick="openWindow()"/>    
+        </body>
+    </html>

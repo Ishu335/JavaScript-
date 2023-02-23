@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Readonly writeonly </title>
+<script language="Javascript" type="text/javascript">
+	
+	function set() 
+	{
+        document.forms.frm1.txt1.readOnly=true`
+       
+	}
+    function unset() 
+	{
+        document.forms.frm1.txt1.readOnly=false`
+       
+	}
+</script>
+</head>
+<body>
+	<form  name="frm1">
+		            <input type="textfield" name="txt1">Frist Year
+                    <input type="textfield" name="txt2"  >Second Year
+                    <br>
+                    <input type="button" value="Readonly" name="b1" onclick="set()">
+                        <br>
+                        <input type="button" value="writeonly"  name="b2" onclick="unset()">
+                        <br> 
+	</form>
+</body>
+</html>

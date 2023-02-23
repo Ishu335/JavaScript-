@@ -1,0 +1,24 @@
+
+
+<html>
+    <head>
+    <title> open() and close() window</title>
+        <script  type="text/javascript">
+        var window_obj
+            function window_open()
+            {
+               window_obj=window.open("","","width=150 height=150 left=350");
+            } 		
+            function window_close()
+            {
+               window_obj.close();
+            }
+        </script>
+        </head>
+        <body>
+            Open Window 
+             <input type="button" value="Open" onclick="window_open()"/>    <br>
+             Close Window
+             <input type="button" value="Close" onclick="window_close()"/>    
+        </body>
+    </html>

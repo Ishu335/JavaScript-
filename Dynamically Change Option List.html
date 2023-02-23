@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Dynamically Change Option List</title>
+<script language="Javascript" type="text/javascript">
+	
+	function DisplayList(ElementValue)
+	{
+        with(document.forms.frm1)
+        {
+            if(ElementValue== 1   )
+            {
+	            opl[0].text="Wpd"
+                opl[0].value=1
+
+                opl[1].text="PIC"
+                opl[1].value=2
+
+                opl[2].text="Maths"
+                opl[2].value=3
+            }
+            if(ElementValue== 2)
+            {
+	            opl[0].text="OOP"
+                opl[0].value=1
+
+                opl[1].text="Dsu"
+                opl[1].value=2
+
+                opl[2].text="Dbms"
+                opl[2].value=3
+                Element.frm1.subjects= hidden
+            }
+        }   
+	}
+</script>
+</head>
+<body>
+	<form action="" method="post" name="frm1">
+		<select name="opl" size="3">
+            <option Value=1>Wpd
+                <option Value=2>Pic
+                    <option Value=3>Maths
+                    </select>
+                    <br>
+                    <input type="radio" name="subjects" checked="true" value=1 onclick="DisplayList(this.value)">Frist Year
+                    <input type="radio" name="subjects" value=2 onclick="DisplayList(this.value)">Second Year
+                    <br>
+                    <inout type="Submit" value="Submit" type="submit">
+                        <br>
+                        <input type="textfield" name="subjects">Second Year
+                        <P>
+
+                            <img scr ="submit.png" height="40" width="50" onclick="javascript:document.forms.frm1.submit()"/>           
+                            <P> 
+	</form>
+</body>
+</html>

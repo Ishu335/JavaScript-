@@ -1,0 +1,23 @@
+
+
+<html>
+    <head>
+    <title>Expiration Data Of Cookies </title>
+        <script  type="text/javascript">
+            function changedate()
+            {
+                var now =new Date();
+                now.setMonth(now.getMouth()+1z );
+
+                var cookie_value =username.value;
+                document.cookie ="username = "+cookies_value+";expires = "+now.toUTCString();
+                alert("Expiry Date of Cookie change: "+"username= "+cookie_value);
+            } 
+             		
+        </script>
+        </head>
+        <body>
+            Enter Username: <input type="text" id ="username"/>
+             <input type="button" value="Extends Expiry Data" onclick="changedate()"/>    
+        </body>
+    </html>

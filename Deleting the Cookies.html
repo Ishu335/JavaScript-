@@ -1,0 +1,20 @@
+
+
+<html>
+    <head>
+    <title>Deleting  the Cookies </title>
+        <script language=Javascript type="text/javascript">
+            function deleteCookie()
+            {
+                var cookie_value =username.value;
+                document.cookies ="username = "+cookies_value+";expires = Fri,25 Dec 2020 00  :00:01 GMT ";
+                alert("Cookies is Deleted");
+            } 
+             		
+        </script>
+        </head>
+        <body>
+            Enter Username: <input type='text' id ='username'>
+             <input type="button" value="Delete cookie" onclick='deleteCookie()'>    
+        </body>
+    </html>

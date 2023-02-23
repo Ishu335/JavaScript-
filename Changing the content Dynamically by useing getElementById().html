@@ -1,0 +1,18 @@
+
+
+<html>
+    <head>
+    <title> Changing the content Dynamically by useing getElementById() </title>
+        <script  type="text/javascript">
+            function change()
+            {
+               document.getElementById("para").innerHTML="<h3><p> After Clicking the Button : New Content </p></h3>";
+            } 		
+        </script>
+        </head>
+        <body>
+            <p> Click to change the content of whole Window </p>
+             <input type="button" value="Change the Content window" onclick="change()"/>    
+             <h3> <p id="para"> Before click to Button : Old content </p></h3>
+        </body>
+    </html>

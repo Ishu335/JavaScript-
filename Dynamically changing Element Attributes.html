@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Dynamically changing Element Attributes</title>
+<script language="Javascript" type="text/javascript">
+	
+	function Set()
+	{
+        with(document.forms.frm1)
+        {
+            if(Fname.value!="")
+            {
+	            msg.value="Welcome "+""+Fname.value;
+            }
+        }   
+	}
+</script>
+</head>
+<body>
+	<form action="" method="post" name="frm1">
+		Frist name= <input type="text" value="" name="Fname" onchange="Set()"/>
+		<br>
+		Message= <input type="text" value="" name="msg" />
+		<br>
+	
+		
+	</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Demo of Form object and Element using " getElementById() and innerHTML"</title>
+<script language="Javascript" type="text/javascript">
+	
+	function change(Element)
+	{
+	 Element.style.color="blue"
+	 Element.style.backgroundColor="silver"
+            
+	}
+</script>
+</head>
+<body>
+	<form action="" method="" name="entry">
+		Country= <input type="text" value="Australia" name="Cname" onchange="change(this)"/>
+		<br>
+		State= <input type="text" value="Queemsland" name="Sname" onchange="change(this)"/>
+		<input type="button"  name="b2" value="Send">
+		<br>
+	
+		
+	</form>
+</body>
+</html>

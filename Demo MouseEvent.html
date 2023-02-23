@@ -1,0 +1,77 @@
+
+
+<html>
+<head>
+<title>Demo Mouse Event</title>
+	<script language="Javascript" type="text/javascript">
+		
+		function message()
+		{
+			alert("Welcome to India ");
+		}
+		function select()
+		{
+			alert("Welcome to USA");
+		}
+		
+		function message1()
+		{
+			alert("Welcome to Uk ");
+		}
+		function select1()
+		{
+			alert("Welcome to Japan");
+		}
+		function shri()
+		{
+			alert("Welcome to ShriLankas");
+		}
+		function input()
+		{
+			alert("Welcome to In");		
+			document.tenten.in1.value="MouseIn";
+			
+		}
+		function out()
+		{
+			document.tenten.in2.value="MouseUp";
+		}
+		function up()
+		{
+			document.tenten.in2.value="MouseDown";	
+		}
+		function move()
+		{
+			alert("Welcome to Move");
+		}
+		
+	</script>
+	</head>
+	<body>
+		<form name="tenten" action="">
+		
+		<br>
+		<input type="submit" value="India" name="ten" onclick="message()">// single click	
+		<br>
+		<input type="submit" value="USA" name="ten" onmousemove ="select()"> mousemove
+		<br>
+		<input type="submit" value="Uk" name="ten" onmousedown="message1()">	mouse
+		<br>
+		<input type="submit" value="Japan" name="ten" ondblclick="select1()">
+		
+		<input type="submit" value="Shri Lanka" name="ten" oncontextmenu="shri()">
+		<br>
+		<input type="submit" value="click" name="in1" onmouseover="input()" onmouseout="out()">
+		<br><br>
+		<input type="submit" value="click" name="in2" onmouseup="up()" onmousedown="down()">
+		<br>
+		<textarea name="text" rows="5"  cols="10" onmousemove="move()">
+		Welcome Ishu
+		</textarea>
+		<br>
+
+		</form>
+                                         		
+		
+	</body>
+</html>
